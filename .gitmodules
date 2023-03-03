@@ -1,0 +1,4 @@
+[submodule "circuit/Meister-KicadLibrary"]
+	path = circuit/Meister-KicadLibrary
+	url = https://github.com/TitechMeister/Meister-KicadLibrary.git
+	ignore=dirty
