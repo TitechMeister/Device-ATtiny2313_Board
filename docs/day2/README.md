@@ -10,19 +10,19 @@ tags:
 ---
 
 
-[前回](../day1/)の続きです。今回は７セグで数字を表示します。
+[前回](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day1/)の続きです。今回は７セグで数字を表示します。
 
 ---
 
 # 目次
 
-* [第0回 はじめに(ハードウェア編)](../day0/)
-* [第0回 はじめに(ソフトウェア編)](../day0.5/)
-* [第1回 Lチカ](../day1/)
+* [第0回 はじめに(ハードウェア編)](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day0/)
+* [第0回 はじめに(ソフトウェア編)](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day0.5/)
+* [第1回 Lチカ](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day1/)
 * 第2回 7セグメントLED　←ここ
-* [第3回 ダイナミック点灯](../day3/)
-* [第4回 タイマ割り込み](../day4/)
-* [第5回 サーミスタとAD変換](../day5/)
+* [第3回 ダイナミック点灯](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day3/)
+* [第4回 タイマ割り込み](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day4/)
+* [第5回 サーミスタとAD変換](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day5/)
 
 ---
 
@@ -48,7 +48,7 @@ tags:
 
 ## 15. プログラム
 
-[前回](../day1/)と14.の内容を参考にして、 __0~9までを1秒ごとに繰り返しカウントアップするプログラム__ を書いてみましょう。
+[前回](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day1/)と14.の内容を参考にして、 __0~9までを1秒ごとに繰り返しカウントアップするプログラム__ を書いてみましょう。
 
 
 ## 15.1. ヒント
@@ -136,6 +136,6 @@ void display(int d){
 
 ---
 
-今回はこれで終了です。[次回](../day3)は4桁全てを点灯させてみます。
+今回はこれで終了です。[次回](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day3)は4桁全てを点灯させてみます。
 
 [^1]: 分かりやすくするために、書き込み回路とRESETピンのpull-up抵抗は省略しました。

@@ -9,25 +9,25 @@ tags:
     - AVR
 ---
 
-[前回](../day2/)の続きです。今回は７セグで4桁の数字を表示します。
+[前回](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day2/)の続きです。今回は７セグで4桁の数字を表示します。
 
 ---
 
 # 目次
 
 
-* [第0回 はじめに(ハードウェア編)](../day0/)
-* [第0回 はじめに(ソフトウェア編)](../day0.5/)
-* [第1回 レジスタとLチカ](../day1/)
-* [第2回 7セグメントLED](../day2/)
+* [第0回 はじめに(ハードウェア編)](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day0/)
+* [第0回 はじめに(ソフトウェア編)](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day0.5/)
+* [第1回 レジスタとLチカ](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day1/)
+* [第2回 7セグメントLED](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day2/)
 * 第3回 ダイナミック点灯　←ここ
-* [第4回 タイマ割り込み](../day4/)
-* [第5回 サーミスタとAD変換](../day5/)
+* [第4回 タイマ割り込み](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day4/)
+* [第5回 サーミスタとAD変換](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day5/)
 ---
 
 ## 16. 前回のプログラムの問題点
 
-[前回](../day2/)は7セグで一桁だけ表示させてみました。[前回](../day2/)の方法で2桁表示しようとすると、 $8\times 2=16$ 本のピンが7セグのために必要になります。4桁では32本のピンが必要になりますが、これはマイコンのピンの数を超えてしまいます。
+[前回](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day2/)は7セグで一桁だけ表示させてみました。[前回](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day2/)の方法で2桁表示しようとすると、 $8\times 2=16$ 本のピンが7セグのために必要になります。4桁では32本のピンが必要になりますが、これはマイコンのピンの数を超えてしまいます。
 
 ## 17. ダイナミック点灯
 
@@ -42,9 +42,9 @@ tags:
 
 ## 18. トランジスタ
 
-![](../day2/img/fig4.png)
+![](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day2/img/fig4.png)
 
-これは、[前回](../day2/)の回路図です。[前回](../day2/)では7セグのカソード(-側)とGNDの接続をPB0で制御しました。
+これは、[前回](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day2/)の回路図です。[前回](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day2/)では7セグのカソード(-側)とGNDの接続をPB0で制御しました。
 
 PB0につながっているのは2SC1815というトランジスタです。トランジスタには２種類の役割があります。**増幅作用**と**スイッチング作用**です。
 
@@ -86,7 +86,7 @@ PORTB=0x02
 ```cpp
 int d=(num%1000)/100;
 ```
-* [前回](../day2/)作った配列は今回も使えます。例えば、3桁目に7を表示させたいのであれば、以下のコードでできます。
+* [前回](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day2/)作った配列は今回も使えます。例えば、3桁目に7を表示させたいのであれば、以下のコードでできます。
 ```cpp
 const unsigned char digit[]={0x3F,0x06,0x5B,0x4F,0x66,0x6D,0x7D,0x07,0x7F,0x6F};
 PORTB=1<<2;
@@ -167,7 +167,7 @@ void displayDigit(){
 * 21行目：display(i)でbufの値をセットします。
 * 22~25行目：displayDigit()で点灯する桁を切り替えます。
 * 30~48行目：iの値に合わせて、bufの値をセットする関数です。
-    * digitは[前回](../day2/)のものをそのまま使いました。
+    * digitは[前回](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day2/)のものをそのまま使いました。
     * `i%10`で一の位、`(1%100)/10`で十の位、`(i%1000)/100`で百の位、`(i%10000)/1000`で千の位を計算できます。
 * 50~55行目：点灯する桁を切り替える関数です。
     * `1<<sw`でsw番目のビットだけを1にすることができます。
@@ -176,4 +176,4 @@ void displayDigit(){
 
 ---
 
-今回はここで終了です。[次回](../day4/)はタイマ割り込みをします。
+今回はここで終了です。[次回](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day4/)はタイマ割り込みをします。

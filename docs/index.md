@@ -32,10 +32,10 @@
 
 当日に使う予定の資料です。分量が多いため、事前に目を通しておくことをお勧めします。
 
-* [はじめに(ハードウェア編)](../day0/)
-* [はじめに(ソフトウェア編)](../day0.5/)
-* [第1回 レジスタとLチカ](../day1/)
-* [第2回 7セグメントLED](../day2/)
-* [第3回 ダイナミック点灯](../day3/)
-* [第4回 タイマ割り込み](../day4/)
-* [第5回 サーミスタとAD変換](../day5/)
+* [はじめに(ハードウェア編)](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day0/)
+* [はじめに(ソフトウェア編)](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day0.5/)
+* [第1回 レジスタとLチカ](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day0/)
+* [第2回 7セグメントLED](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day2/)
+* [第3回 ダイナミック点灯](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day3/)
+* [第4回 タイマ割り込み](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day4/)
+* [第5回 サーミスタとAD変換](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day5/)
