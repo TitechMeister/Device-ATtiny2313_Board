@@ -1,14 +1,3 @@
----
-title: "AVR入門その０"
-date: 2023-03-07T12:50:15+09:00
-archives:
-    - 2023-03
-draft: false
-categories: [Electronics]
-tags:
-    - AVR
----
-
 [前回](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day0)の続きです。
 
 ---

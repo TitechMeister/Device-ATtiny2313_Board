@@ -1,14 +1,3 @@
----
-title: "AVR入門その３"
-date: 2023-03-15T12:45:23+09:00
-archives:
-    - 2023-03
-draft: false
-categories: [Electronics]
-tags:
-    - AVR
----
-
 [前回](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day2/)の続きです。今回は７セグで4桁の数字を表示します。
 
 ---
