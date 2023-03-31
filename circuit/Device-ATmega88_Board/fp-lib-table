@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "Meister")(type "KiCad")(uri "${KIPRJMOD}/../Meister-KicadLibrary/MeisterLibrary/Meister.pretty")(options "")(descr ""))
+)
