@@ -183,6 +183,4 @@ ISR(TIMER0_COMPA_vect){
 }
 ```
 
-### 24. （参考）PWM制御
-
-21.3.でタイマモードにPWMがありました。これを使えば、PWMの波形を出力することができます。
+今回はここまでです。[次回](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day5/)はいよいよ温度計を作ります。
