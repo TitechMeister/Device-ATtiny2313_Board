@@ -5,7 +5,6 @@
 unsigned char buf[4];
 
 void display(int i);
-void display(float f);
 
 int main(void){
 	DDRD=0xFF;
@@ -24,9 +23,12 @@ int main(void){
 	sei();
 	int i=0;
 	while(1){
-		i++;
+		i--;
+        if(i<0){
+            i=9999;
+        }
 		display(i);
-		_delay_ms(10);
+		_delay_ms(1000);
 	}
 	return 0;
 }

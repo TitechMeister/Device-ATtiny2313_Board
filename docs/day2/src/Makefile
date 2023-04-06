@@ -1,6 +1,6 @@
 DEVICE	= atmega88
 WRITER	= arduino
-PORT		= COM17
+PORT		= COM3
 OBJECTS	= main.o
 
 FUSES     = -U lfuse:w:0xe2:m -U hfuse:w:0xd9:m -U efuse:w:0x07:m -F

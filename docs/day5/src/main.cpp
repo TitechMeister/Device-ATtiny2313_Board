@@ -5,7 +5,7 @@
 
 unsigned char buf[4];
 
-void display(float f);
+void display(double d);
 
 int main(void) {
 	DDRD = 0xFF;
@@ -13,7 +13,7 @@ int main(void) {
 	DDRB = 0x0F;
 	PORTB = 0x00;
 
-	ADCSRA=0b10000100; // 
+	ADCSRA=0b10000100;
 	ADMUX=0b00000000;
 	_delay_ms(5);
 
@@ -24,22 +24,30 @@ int main(void) {
 	//timer0 割り込み設定
 	TIMSK0 = 0b00000010;
 	OCR0A = 4;
+    
+    // AD変換の設定
+    ADMUX=0b00000000;
+    ADSRA=0b10000100;
+    _delay_ms(5);
+
 	//割り込みを許可
 	sei();
 	int i = 5000;
-	float f=0.0f;
+    volatile double temp=0.0;
 	while (1) {
-		f-=0.01;
-		if (f < -0.999) {
-			f = 9999.99;
-		}
-		display(f);
+        
+		ADSRA|=0b01000000; //AD変換スタート
+        while(!(ADSRA&0b01000000)){}//変換中...
+
+        temp=1020992.5/(298.1*log(adc/(1023-adc))+3425);//温度に変換
+
+		display(temp);
 		_delay_ms(100);
 	}
 	return 0;
 }
 
-void display(float f) {
+void display(double d) {
 	const unsigned char digit[] = { 0x3F, 0x06, 0x5B, 0x4F, 0x66, 0x6D, 0x7D, 0x07, 0x7F, 0x6F };
 	/*ピンの接続:
 	 * PORTD:
@@ -66,7 +74,7 @@ void display(float f) {
 		buf[1] = digit[(i % 1000) / 100];
 		buf[0] = digit[i / 1000];
 
-		buf[d-1]|=0x80; // 点を加える
+		buf[d-1]|=0x80; // 小数点を加える
 	}else if(f<0){
 		int d=(int)log10(-f)+1; // 整数部分の桁数
 
