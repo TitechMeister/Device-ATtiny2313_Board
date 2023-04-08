@@ -27,7 +27,7 @@ int main(void) {
     
     // AD変換の設定
     ADMUX=0b00000000;
-    ADSRA=0b10000100;
+    ADCSRA=0b10000100;
     _delay_ms(5);
 
 	//割り込みを許可
@@ -36,10 +36,12 @@ int main(void) {
     volatile double temp=0.0;
 	while (1) {
         
-		ADSRA|=0b01000000; //AD変換スタート
-        while(!(ADSRA&0b01000000)){}//変換中...
+		ADCSRA|=0b01000000; //AD変換スタート
+        while(!(ADCSRA&0b01000000)){}//変換中...
 
-        temp=1020992.5/(298.1*log(adc/(1023-adc))+3425);//温度に変換
+		double adc=(double)ADC;
+
+        temp=1020992.5/10.0/(298.1*log(adc/(1023.0-adc))+3425.0);//温度に変換
 
 		display(temp);
 		_delay_ms(100);
@@ -47,7 +49,7 @@ int main(void) {
 	return 0;
 }
 
-void display(double d) {
+void display(double f) {
 	const unsigned char digit[] = { 0x3F, 0x06, 0x5B, 0x4F, 0x66, 0x6D, 0x7D, 0x07, 0x7F, 0x6F };
 	/*ピンの接続:
 	 * PORTD:
