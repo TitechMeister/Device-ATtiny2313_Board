@@ -1,5 +1,5 @@
-# Device-ATmega88_Board
+# Device-ATtiny2313_Board
 
-![](docs/img/top.png)
+![](docs/img/ready.png)
 
-Meister新歓2023の作業体験に使う基板です。
+Meister新歓2024の作業体験に使う基板です。
