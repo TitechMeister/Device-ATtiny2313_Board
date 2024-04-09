@@ -1,3 +1,0 @@
--I/tools/avr/avr/include/
--mmcu=atmega88
--D__AVR_ATmega88__
