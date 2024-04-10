@@ -1,4 +1,4 @@
-[前回](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day0)の続きです。
+[前回](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day0.0)の続きです。
 
 ---
 
