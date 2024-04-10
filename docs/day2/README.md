@@ -1,16 +1,16 @@
-[前回](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day1/)の続きです。今回は７セグで数字を表示します。
+[前回](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day1/)の続きです。今回は７セグで数字を表示します。
 
 ---
 
 # 目次
 
-* [第0回 はじめに(ハードウェア編)](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day0/)
-* [第0回 はじめに(ソフトウェア編)](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day0.5/)
-* [第1回 Lチカ](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day1/)
-* 第2回 7セグメントLED　←ここ
-* [第3回 ダイナミック点灯](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day3/)
-* [第4回 タイマ割り込み](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day4/)
-* [第5回 サーミスタとAD変換](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day5/)
+* [はじめに(ハードウェア編)](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day0.0)
+* [はじめに(ソフトウェア編)](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day0.0)
+* [第1回 LEDとボタン](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day1/)
+* 第2回 7セグメントLED <=今ココ
+* [第3回 ダイナミック点灯](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day3/)
+* [第4回 タイマ割り込み](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day4/)
+* [第5回 スロットマシン](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day5/)
 
 ---
 
@@ -79,7 +79,7 @@
 
 ## 13. プログラム
 
-[前回](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day1/)と14.の内容を参考にして、 **0~9までを1秒ごとに繰り返しカウントアップするプログラム** を書いてみましょう。何桁目に表示するかは任せます。
+[前回](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day1/)と14.の内容を参考にして、 **0~9までを1秒ごとに繰り返しカウントアップするプログラム** を書いてみましょう。何桁目に表示するかは任せます。
 
 ### 13.1. ヒント
 
@@ -187,4 +187,4 @@ num配列の各要素は、それぞれの数字がどのLEDを光らせるこ�
 
 ---
 
-今回はこれで終了です。[次回](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day3)は4桁全てを点灯させてみます。
+今回はこれで終了です。[次回](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day3)は4桁全てを点灯させてみます。

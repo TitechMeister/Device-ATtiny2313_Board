@@ -1,22 +1,22 @@
-[前回](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day3/)の続きです。今回はタイマ割り込みを使って数字を表示します。
+[前回](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day3/)の続きです。今回はタイマ割り込みを使って数字を表示します。
 
 ---
 
 # 目次
 
-* [はじめに(ハードウェア編)](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day0/)
-* [はじめに(ソフトウェア編)](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day0.5/)
-* [第1回 レジスタとLチカ](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day1/)
-* [第2回 7セグメントLED](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day2/)
-* [第3回 ダイナミック点灯](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day3/)
-* 第4回 タイマ割り込み ←ここ
-* [第5回 サーミスタとAD変換](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day5/)
+* [はじめに(ハードウェア編)](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day0.0)
+* [はじめに(ソフトウェア編)](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day0.0)
+* [第1回 LEDとボタン](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day1/)
+* [第2回 7セグメントLED](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day2/)
+* [第3回 ダイナミック点灯](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day3/)
+* 第4回 タイマ割り込み<=今ココ
+* [第5回 スロットマシン](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day5/)
 
 ---
 
 ## 18. 前回のプログラムの問題点
 
-[前回](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day3/)は7セグで4桁の数字を表示しました。しかし、前回の方法だと7セグを点灯している間は他の処理ができなくなってしまいます。これは、点灯した後に5ms待機する処理をCPU側でやってしまっているためです。今回は、**タイマ割り込み**というものを使ってこの問題を解決します。
+[前回](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day3/)は7セグで4桁の数字を表示しました。しかし、前回の方法だと7セグを点灯している間は他の処理ができなくなってしまいます。これは、点灯した後に5ms待機する処理をCPU側でやってしまっているためです。今回は、**タイマ割り込み**というものを使ってこの問題を解決します。
 
 ## 19. タイマ割り込み
 
@@ -162,4 +162,4 @@ void loop() {
 
 ---
 
-今回はここまでです。[次回](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day5/)はいよいよスロットマシンを作ります。
+今回はここまでです。[次回](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day5/)はいよいよスロットマシンを作ります。

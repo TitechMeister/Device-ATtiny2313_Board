@@ -1,22 +1,22 @@
-[前回](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day2/)の続きです。今回は７セグで4桁の数字を表示します。
+[前回](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day2/)の続きです。今回は７セグで4桁の数字を表示します。
 
 ---
 
 # 目次
 
+* [はじめに(ハードウェア編)](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day0.0)
+* [はじめに(ソフトウェア編)](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day0.0)
+* [第1回 LEDとボタン](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day1/)
+* [第2回 7セグメントLED](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day2/)
+* 第3回 ダイナミック点灯<=今ココ
+* [第4回 タイマ割り込み](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day4/)
+* [第5回 スロットマシン](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day5/)
 
-* [第0回 はじめに(ハードウェア編)](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day0/)
-* [第0回 はじめに(ソフトウェア編)](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day0.5/)
-* [第1回 レジスタとLチカ](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day1/)
-* [第2回 7セグメントLED](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day2/)
-* 第3回 ダイナミック点灯　←ここ
-* [第4回 タイマ割り込み](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day4/)
-* [第5回 サーミスタとAD変換](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day5/)
 ---
 
 ## 14. 前回のプログラムの問題点
 
-[前回](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day2/)は7セグで一桁だけ表示させてみました。[前回](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day2/)の方法で2桁表示しようとすると、 $8\times 2=16$ 本のピンが7セグのために必要になります。4桁では32本のピンが必要になりますが、これはマイコンのピンの数を超えてしまいます。
+[前回](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day2/)は7セグで一桁だけ表示させてみました。[前回](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day2/)の方法で2桁表示しようとすると、 $8\times 2=16$ 本のピンが7セグのために必要になります。4桁では32本のピンが必要になりますが、これはマイコンのピンの数を超えてしまいます。
 
 ## 15. ダイナミック点灯
 
@@ -31,10 +31,9 @@
 
 ## 16. トランジスタ
 
-
 ![](../day2/img/7segment.png)
 
-これは、[前回](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day2/)のなんとなくの回路図です。[前回](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day2/)ではトランジスタの説明を省きましたが、今回は非常に重要な役目を果たしてくれるので説明します。
+これは、[前回](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day2/)のなんとなくの回路図です。[前回](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day2/)ではトランジスタの説明を省きましたが、今回は非常に重要な役目を果たしてくれるので説明します。
 
 <span style='color:#527fa8'>8~11ピン</span>につながっているのは2SA1015Lというトランジスタです。トランジスタには２種類の役割があります。**増幅作用**と**スイッチング作用**です。
 
@@ -58,7 +57,7 @@
 int d=(num%1000)/100;　// ex. (1467%1000)/100 == 4
 ```
 
-* [前回](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day2/)作ったコードを上手く流用してみましょう。例えば、数字を表示するための配列は使いまわすことが出来そうです。
+* [前回](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day2/)作ったコードを上手く流用してみましょう。例えば、数字を表示するための配列は使いまわすことが出来そうです。
 
 * delay()で指定した時間(ms)だけ待機することができます。
 * (発展)「i桁目にnを表示する」というプログラムを何度も実行することになります。関数にしておくと、書きやすくなります。
@@ -130,6 +129,7 @@ void loop() {
 }
 
 ```
+
 </details>
 
 ### 17.3. プログラムの解説
@@ -151,4 +151,4 @@ void loop() {
 
 ---
 
-今回はここで終了です。[次回](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day4/)はタイマ割り込みをします。
+今回はここで終了です。[次回](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day4/)はタイマ割り込みをします。

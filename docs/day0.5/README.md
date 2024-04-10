@@ -1,17 +1,17 @@
-[前回](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day0)の続きです。
+[前回](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day0)の続きです。
 
 ---
 
 # 目次
 
+* [はじめに(ハードウェア編)](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day0.0)
+* はじめに(ソフトウェア編)<=今ココ
+* [第1回 LEDとボタン](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day1/)
+* [第2回 7セグメントLED](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day2/)
+* [第3回 ダイナミック点灯](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day3/)
+* [第4回 タイマ割り込み](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day4/)
+* [第5回 スロットマシン](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day5/)
 
-* [はじめに(ハードウェア編)](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day0/)
-* [はじめに(ソフトウェア編)](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day0.5/)
-* [第1回 レジスタとLチカ](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day1/)
-* [第2回 7セグメントLED](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day2/)
-* [第3回 ダイナミック点灯](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day3/)
-* [第4回 タイマ割り込み](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day4/)
-* [第5回 サーミスタとAD変換](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day5/)
 ---
 
 ## 4. 開発環境の構築
@@ -54,7 +54,7 @@ Arduino IDEを開いてPreferencesを開いてください。どこにあるか�
 
 ![](img/arduino_programmer.png)
 
-以上で環境構築は終わりです。[次回](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day1/)からマイコンを動かしていきます。
+以上で環境構築は終わりです。[次回](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day1/)からマイコンを動かしていきます。
 
 ---
 

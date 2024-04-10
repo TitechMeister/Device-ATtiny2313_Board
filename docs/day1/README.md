@@ -1,16 +1,16 @@
-[ハードウェア編]()と[ソフトウェア編]()の準備が終わったところで、実際に基板を動かしていきましょう。まずはLEDを点滅させてみます。
+[ハードウェア編](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day0.0)と[ソフトウェア編](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day0.5)の準備が終わったところで、実際に基板を動かしていきましょう。まずはLEDを点滅させてみます。
 
 ---
 
 # 目次
 
-* [はじめに(ハードウェア編)](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day0/)
-* [はじめに(ソフトウェア編)](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day0.5/)
-* [第1回 レジスタとLチカ](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day1/)
-* [第2回 7セグメントLED](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day2/)
-* [第3回 ダイナミック点灯](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day3/)
-* [第4回 タイマ割り込み](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day4/)
-* [第5回 サーミスタとAD変換](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day5/)
+* [はじめに(ハードウェア編)](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day0.0)
+* [はじめに(ソフトウェア編)](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day0.0)
+* 第1回 LEDとボタン<=今ココ
+* [第2回 7セグメントLED](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day2/)
+* [第3回 ダイナミック点灯](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day3/)
+* [第4回 タイマ割り込み](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day4/)
+* [第5回 スロットマシン](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day5/)
 
 ---
 
@@ -38,7 +38,6 @@ void loop() {
   delay(1000);            //1秒まつ
 }
 ```
-
 
 ## 7. プログラムを書き込む
 
@@ -188,4 +187,4 @@ else {
 
 ---
 
-以上で第一回は終わりです。プログラムの書き込みと、ピンの入出力について理解してもらえたでしょうか。[次回](https://github.com/TitechMeister/Device-ATmega88_Board/tree/main/docs/day2/)は7セグメントLEDを使います。
+以上で第一回は終わりです。プログラムの書き込みと、ピンの入出力について理解してもらえたでしょうか。[次回](https://github.com/TitechMeister/Device-ATtiny2313_Board/tree/main/docs/day2/)は7セグメントLEDを使います。
