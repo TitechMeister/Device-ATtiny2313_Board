@@ -63,7 +63,7 @@ Meister新歓2024で使用する回路の情報はGithubで管理されていま
 
 |番号|名称|個数|画像|
 |:-:|:-:|:-:|:-:|
-|J1|ATtiny2313|1|![](img/attiny2313.jpg)|
+|U1|ATtiny2313|1|![](img/attiny2313.jpg)|
 |R1~R14|1kΩ抵抗|14|![](img/resistor.jpg)|
 |Q1~Q4|2SA1015L|4|![](img/transistor.jpg)|
 |J2|1x3ピンヘッダ|2|![](img/pinheader_1x3.jpg)|

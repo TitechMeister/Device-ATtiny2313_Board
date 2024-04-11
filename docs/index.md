@@ -1,7 +1,7 @@
 
 # 作業体験 特設サイト
 
-![](img/ready.png)
+![](img/handa.png)
 
 ## 作業体験の流れ
 

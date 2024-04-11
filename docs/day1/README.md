@@ -133,12 +133,12 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  bool button = digitalRead(13); //buttonの値を保存
-  if (button) {                  //もしbuttonが押されてたら...
-    digitalWrite(12, HIGH);      //LEDをON
-  }
-  else {                         //そうでなければ...
+  bool button = digitalRead(13); //buttonの値を保存。押されていると0,押されていないと1
+  if (button) {                  //もしbuttonが押されていなかったら...
     digitalWrite(12, LOW);       //LEDをOFF
+  }
+  else {                         //押されていたら...
+    digitalWrite(12, HIGH);      //LEDをON
   }
 }
 ```
