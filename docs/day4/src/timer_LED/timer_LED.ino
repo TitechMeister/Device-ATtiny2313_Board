@@ -68,11 +68,11 @@ void setup() {
     pinMode(i, OUTPUT);   //0~11ピンの出力機能を有効化、すなわちA~DP, digit1~4に出力できるように
   }
 
-  TCCR0A = 0b00000010;
-  TCCR0B = 0b00000101;
-  TIMSK = 0b00000001;
+  TCCR1A = 0b00000000;
+  TCCR1B = 0b00001101;
+  TIMSK = 0b01000000;
 
-  OCR0A = 40; //(8で割った値)msごとにタイマ割り込みが発生。MAX255
+  OCR1AL = 40; //(8で割った値)msごとにタイマ割り込みが発生。MAX255
 
   sei();
 
