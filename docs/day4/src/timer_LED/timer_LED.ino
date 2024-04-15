@@ -35,7 +35,7 @@ void display(char digit, int dispnum) {  //digitは表示する桁(1~4), dispnum
   }
 }
 
-ISR (TIMER0_COMPA_vect) {
+ISR (TIMER1_COMPA_vect) {
   if (timerdigit == 1) {
     display(1, count/1000);        //上1桁目(1000の位)の表示
   } else if (timerdigit == 2) {
